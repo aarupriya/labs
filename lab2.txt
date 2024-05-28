@@ -1,0 +1,34 @@
+1)Using input() function take one number from the user and using ternary oerators?check whether the number is even or odd?
+Code:
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+
+Output:
+Enter a number: 12
+The number is even
+
+2)Using input function take two number and then swap the number?
+Code:
+# Taking two numbers input from the user
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+ # Swapping the numbers
+number1 = number1 + number2
+number2 = number1 - number2
+number1 = number1 - number2
+ 
+# Displaying the swapped numbers
+print("After swapping:")
+print("First number:", number1)
+print("Second number:", number2)
+
+Output:
+Enter the first number: 5
+Enter the second number: 10
+After swapping:
+First number: 10
+Second number: 5

@@ -1,0 +1,78 @@
+1.Print the table of 5 using for loop?
+
+Code:
+for i in range(1, 11):                         # Loop from 1 to 10
+    result = 5 * i                             # Calculate the result
+    print(f"5 * {i} = {result}")               # Print the equation and result
+
+Output:
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Print even number series by taking input from the user:
+
+Code:
+start = int(input("Enter the start of the range: "))                      # Get the start of the range from the user
+end = int(input("Enter the end of the range: "))                          # Get the end of the range from the user
+
+                                                                          # Print even numbers in the given range
+print("Even numbers in the range from", start, "to", end, "are:")
+for num in range(start, end + 1):                                         # Iterate through numbers in the range
+    if num % 2 == 0:                                                      # Check if the number is even
+        print(num, end=" ")                                               # Print the even number
+
+Output:
+Enter the start of the range: 1
+Enter the end of the range: 10
+Even numbers in the range from 1 to 10 are:
+2 4 6 8 10
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.Create a list and iterate through its items using a for loop:
+
+Code:
+                                                                           # Create a list
+my_list = ["apple", "banana", "orange", "grape", "kiwi"]                   # Initialize a list with some fruit items
+    print("Items in the list:")                                            # Iterate through the items of the list using a for loop
+for item in my_list:                                                       # Loop through each item in the list
+    print(item)                                                            # Print the current item
+
+Output:
+Items in the list:
+apple
+banana
+orange
+grape
+kiwi
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Calculate the sum of numbers from 1 to 10:
+
+Code:
+
+total_sum = 0                                                            # Starting with sum as 0
+for num in range(1, 11):                                                 # Loop through numbers from 1 to 10 and add them to the sum # Loop from 1 to 10
+    total_sum += num  # Add the current number to the sum
+print("The sum of numbers from 1 to 10 is:", total_sum)                  # Print the sum # Print the final sum
+
+Output:
+The sum of numbers from 1 to 10 is: 55
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                        
+
+
+
+
+
+
+
+
+
+

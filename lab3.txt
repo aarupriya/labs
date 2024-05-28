@@ -1,0 +1,89 @@
+1. Python program to check leap year?
+
+Code:
+year = int(input("Enter a year: "))                               # Ask the user to enter a year
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):        # Check if it's a leap year and print the result
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
+
+Output:
+Enter a year: 1900
+1900 is not a leap year
+
+2. Python Program to Find the Largest Among Three Numbers?
+
+Code:
+num1 = float(input("Enter first number: "))                        # User enters the first number
+num2 = float(input("Enter second number: "))                       # User enters the second number
+num3 = float(input("Enter third number: "))                        # User enters the third number
+largest = max(num1, num2, num3)                                    # Find the largest among the three numbers 
+print("The largest number among", num1, ",", num2, "and", num3, "is:", largest) # Find the largest among the three numbers
+
+Output:
+Enter first number: 10
+Enter second number: 20
+Enter third number: 30
+The largest number among 10 , 20 and 30 is: 30
+
+3. Python Program to Check if a Number is Positive, Negative or 0?
+
+Code:
+num = float(input("Enter a number: "))                              # Ask the user to enter a number
+if num > 0:                                                         # Check if the number is positive, negative, or zero
+    print("The number entered is positive")
+elif num < 0:
+    print("The number entered is negative")
+else:
+    print("The number entered is zero")
+
+Output:
+Enter a number: 10
+The number entered is positive
+
+4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. 
+The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000. 
+On orders of more than Rs. 100 for key-based toys, a discount of 5% is given, and a discount of 10% is given 
+on orders for electrical charging based toys of value more than Rs. 500.Assume that the numeric codes 1,2 and 3 
+are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program 
+that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount. 
+
+Code:
+                                                              # Ask the user to enter the product code and order amount
+product_code = int(input("Enter product code (1 for Battery Based Toys, 2 for Key-based Toys, 3 for Electrical Charging Based Toys): "))
+order_amount = float(input("Enter order amount: Rs. "))
+if product_code == 1 and order_amount > 1000:                 # Check the product code and calculate discount accordingly
+    discount = 0.10 * order_amount
+elif product_code == 2 and order_amount > 100:
+    discount = 0.05 * order_amount
+elif product_code == 3 and order_amount > 500:
+    discount = 0.10 * order_amount
+else:
+    discount = 0
+net_amount = order_amount - discount                           # Calculate the net amount after discount
+print("Net amount after discount: Rs.", net_amount)# Print the net amount the customer is required to pay
+
+Output:
+Enter product code (1 for Battery Based Toys, 2 for Key-based Toys, 3 for Electrical Charging Based Toys): 1
+Enter order amount: Rs. 800
+Net amount after discount: Rs. 800.0
+
+5. A transport company charges the fare according to following table: Distance Charges 1-50 8 Rs./Km 51-100 10 Rs./Km > 100 12 Rs/Km?
+
+Code:
+
+distance = float(input("Enter the distance traveled (in km): "))              # Ask the user to enter the distance traveled
+if distance <= 50:                                                            # Ask the user to enter the distance traveled
+    fare = distance * 8
+elif distance <= 100:
+    fare = 50 * 8 + (distance - 50) * 10
+else:
+    fare = 50 * 8 + 50 * 10 + (distance - 100) * 12
+print("The fare for traveling", distance, "km is: Rs.", fare)                 # Ask the user to enter the distance traveled
+
+
+
+
+
+
+

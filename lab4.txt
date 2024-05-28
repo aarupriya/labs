@@ -1,0 +1,72 @@
+1.Function without Parameters?
+Code:
+def say_hello():
+    print("Hello, World!")
+say_hello()                        # Calling the function
+ 
+Output:
+Hello, World!
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Function with Parameter?
+
+Code:
+# Define a function named add_numbers that takes two parameters, a and b
+def add_numbers(a, b):                          # Define a function named add_numbers that takes two parameters, a and b
+    sum = a + b # Calculate the sum of a and b
+    print("The sum is:", sum)                   # Print the sum with a message
+add_numbers(3, 5)                               # Calling the function add_numbers with arguments 3 and 5
+
+Output:
+The sum is: 8
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.Function with Default Parameter?
+
+Code:
+
+def greet(name="Guest"):                          # Define a function named greet with a default parameter 'name' 
+    print("Hello,", name)                         # Print a greeting message, using the 'name' parameter
+greet()                                           # Call the function greet() without providing any argument
+greet("Alice")                                    # Output: Hello, Alice# Call the function greet() with an argument "Alice"
+
+Output:
+Hello, Guest
+Hello, Alice
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Function with Return Keyword?
+
+Code:
+
+def multiply(a, b):                               # Define a function named multiply that takes two parameters, a and b
+   product = a * b                                # Calculate the product of a and b
+   return product# Return the product
+result = multiply(4, 3)                           # Calling the function with arguments 4 and 3
+print("The product is:", result)                  # Print the result
+
+Output:
+The product is: 12
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.Recursion?
+
+Code:
+
+def factorial(n):                                 # Define a recursive function named factorial to calculate the factorial of a number n
+    if n == 0: # Base case: If n is 0, the factorial is 1
+        return 1
+    else:
+        return n * factorial(n - 1)               # Recursive case: Calculate factorial(n) as n multiplied by factorial(n-1)
+result = factorial(5)# Calculating the factorial of 5
+print("The factorial of 5 is:", result)           # Output: The factorial of 5 is: 120# Print the result
+
+Output:
+The factorial of 5 is: 120
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

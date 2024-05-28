@@ -1,0 +1,91 @@
+
+1.Write a Python program to count the occurrences of each word in a
+
+given sentence
+
+string = “To change the overall look of your document. To change the look
+
+available in the gallery”
+
+Code:
+sentence = "To change the overall look of your document. To change the look available in the gallery"
+words = sentence.split()                                               # Split the sentence into words
+word_counts = {}
+for word in words:                                                     # Iterate through each word
+   if word in word_counts:                                             # If the word is already in the dictionary, increment its count
+     word_counts[word] += 1                                            # If the word is already in the dictionary, increment its count
+   else:                                                               # If the word is not in the dictionary, add it with a count of 1
+        word_counts[word] = 1
+for word, count in word_counts.items():                                # Print the word occurrences
+    print(f"'{word}' occurs {count} time(s)")
+
+Output:
+'To' occurs 2 time(s)
+'change' occurs 2 time(s)
+'the' occurs 2 time(s)
+'overall' occurs 1 time(s)
+'look' occurs 2 time(s)
+'of' occurs 1 time(s)
+'your' occurs 1 time(s)
+'document.' occurs 1 time(s)
+'available' occurs 1 time(s)
+'in' occurs 1 time(s)
+'gallery' occurs 1 time(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Write a Python program to remove a newline in Python
+
+String = "\nBest \nDeeptech \nPython \nTraining\n"
+
+Code:
+string = "\nBest \nDeeptech \nPython \nTraining\n"                      # Given string with newline characters
+string_without_newlines = string.replace('\n', '')                      # Remove newline characters
+print("String without newlines:", string_without_newlines)              # Print the string without newline characters
+
+Output:
+String without newlines: Best Deeptech Python Training
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a Python program to reverse words in a string
+
+String = “Deeptech Python Training”
+
+Code:
+string = "Deeptech Python Training"                                      # Given string
+words = string.split()                                                   # Split the string into words
+reversed_words = words[::-1]                                             # Reverse the order of words
+reversed_string = ' '.join(reversed_words)                               # Join the reversed words back into a string
+print("Reversed string:", reversed_string)                               # Print the reversed string
+
+Output:
+Reversed string: Training Python Deeptech
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Write a Python program to count and display the vowels of a given text
+
+String=”Welcome to python Training”
+
+Code:
+string = "Welcome to python Training"
+def count_and_display_vowels(text):                                        # Define a function to count and display vowels
+    vowels = 'aeiouAEIOU'                                                  # List of vowels
+    vowel_count = 0                                                        # Initialize vowel count
+    for char in text:                                                      # Iterate through each character in the text
+        if char in vowels:                                                 # Check if the character is a vowel
+            vowel_count += 1
+            print(char, end=' ')                                           # Display the vowel
+    print("\nTotal number of vowels:", vowel_count)                        # Display total vowel count
+count_and_display_vowels(string)                                           # Call the function with the given string
+
+Output:
+e o e o o a i a i
+Total number of vowels: 8
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

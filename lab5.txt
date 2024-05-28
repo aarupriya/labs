@@ -1,0 +1,87 @@
+1.Print the reverse order series  using a while loop?
+
+Code:
+end = 10                          # Define the end of the series
+while end > 0:                    # While end is greater than 0
+    print(end)                    # Print the current value of end
+    end -= 1                      # Decrement end by 1 for the next iteration
+
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Create a code that describe the use of break statement in while loop?
+
+Code:
+count = 0  # Initialize count to 0                              # Example of using break in a while loop
+while count < 5:                                                # While count is less than 5
+    print("Count:", count)                                      # Print the current value of count
+    if count == 3:                                              # If count is equal to 3
+        print("Break!")                                         # Print "Break!"
+        break                                                   # Exit the loop immediately
+    count += 1                                                  # Increment count by 1 for the next iteration
+
+Output:
+Count: 0
+Count: 1
+Count: 2
+Count: 3
+Break!
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.Write a Python program using a while loop to iterate through each character of the string "Python" and print each character on a new line. 
+Additionally, calculate and print the length of the string.
+
+Code:
+
+word = "Python"                                                   # Initialize variables
+length = 0                                                        # To store the length of the string
+index = 0                                                         # Index to iterate through the characters
+while index < len(word):                                          # Loop through each character in the string
+    print(word[index])                                            # Print the current character
+    length += 1                                                   # Increment the length counter
+    index += 1                                                    # Move to the next character
+    print("Length of the string:", length)                        # Print the length of the string
+
+Output:
+P
+y
+t
+h
+o
+n
+Length of the string: 6
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Write a Python program that takes an integer input from the user and calculates its factorial using a while loop. 
+Display the result as the factorial of the entered number.
+
+Code:
+def calculate_factorial(num):                                     # Function to calculate factorial
+    factorial = 1                                                 # Initialize factorial to 1
+    while num > 0:                                                # While num is greater than 0
+        factorial *= num                                          # Multiply factorial by num
+        num -= 1                                                  # Decrement num by 1 for the next iteration
+    return factorial                                              # Return the calculated factorial
+num = int(input("Enter a number: "))                              # Take an integer input from the user
+if num < 0:                                                       # Check if the number is negative
+    print("Factorial is not defined for negative numbers.")
+else:
+    result = calculate_factorial(num)                             # Call the function to calculate factorial
+    print("Factorial of", num, "is:", result)                     # Print the result
+
+Output:
+Enter a number: 5
+Factorial of 5 is: 120
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
